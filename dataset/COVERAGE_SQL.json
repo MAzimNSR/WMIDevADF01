@@ -1,0 +1,122 @@
+{
+	"name": "COVERAGE_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TYPE_TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBROGATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RELATIONSHIP_CODING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERIOD_END",
+				"type": "nvarchar"
+			},
+			{
+				"name": "POLICY_HOLDER_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBSCRIBER_REFERENCE_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BENEFICIARY_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERIOD_START",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RELATIONSHIP_TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBSCRIBER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DEPENDENT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NETWORK",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TYPE_CODING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBSCRIBER_REFERENCE_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COST_TO_BENEFICIARY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "POLICY_HOLDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLASS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ORDER",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "COVERAGE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

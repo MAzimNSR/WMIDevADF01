@@ -1,0 +1,354 @@
+{
+	"name": "ENCOUNTER_SnowFlake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "TIMESTAMP_NTZ",
+				"precision": 29,
+				"scale": 9
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS_HISTORY",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS_CLASS_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS_CLASS_SYSTEM",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS_CLASS_VERSION",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS_CLASS_CODE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS_CLASS_DISPLAY",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS_DISPLAY_USER_SELECTED",
+				"type": "BOOLEAN",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "CLASS_HISTORY",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "TYPE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SERVICE_TYPE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PRIORITY",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SUBJECT_DISPLAY",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "EPISODE_OF_CARE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BASED_ON",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PARTICIPANT",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "APPOINTMENT",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PERIOD_START",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PERIOD_END",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LENGTH_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LENGTH_VALUE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 9
+			},
+			{
+				"name": "LENGTH_VALUE_SCALE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "LENGTH_COMPARATOR",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LENGTH_UNIT",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LENGTH_SYSTEM",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LENGTH_CODE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "REASON_CODE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "REASON_REFERENCE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "DIAGNOSIS",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ACCOUNT",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_PREADMISSION_IDENTIFIER",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_ORIGIN_REFERENCE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_ORIGIN_DISPLAY",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_ADMIT_SOURCE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_READMISSION",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_DIET_PREFERENCE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_SPECIAL_COURTESY",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_SPECIAL_ARRANGEMENT",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_DESTINATION_REFERENCE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_DESTINATION_DISPLAY",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HOSPITALIZATION_DISCHARGE_DISPOSITION",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LOCATION",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SERVICE_PROVIDER_REFERENCE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SERVICE_PROVIDER_DISPLAY",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PART_OF_REFERENCE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PART_OF_DISPLAY",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "TIMESTAMP_NTZ",
+				"precision": 29,
+				"scale": 9
+			}
+		],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "ENCOUNTER"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

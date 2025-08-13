@@ -1,0 +1,46 @@
+{
+	"name": "PATIENTCOMMUNICATION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "LANGUAGE_TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PREFERRED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LANGUAGE_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LANGUAGE_SYSTEM",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PATIENTCOMMUNICATION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

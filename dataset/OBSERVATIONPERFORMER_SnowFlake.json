@@ -1,0 +1,48 @@
+{
+	"name": "OBSERVATIONPERFORMER_SnowFlake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "REFERENCE_TYPE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "REFERENCE_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "OBSERVATIONPERFORMER"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

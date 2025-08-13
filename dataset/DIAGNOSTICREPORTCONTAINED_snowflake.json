@@ -1,0 +1,162 @@
+{
+	"name": "DIAGNOSTICREPORTCONTAINED_snowflake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "FHIR_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "NAME",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SUBJECT",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "VALUEQUANTITY",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "RESOURCETYPE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "REFERENCERANGE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "VALUESTRING",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "INTERPRETATION",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "TEXT",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CODE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "VALUERANGE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "VALUEDATETIME",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "NOTE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "STATUS",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "TELECOM",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ADDRESS",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CATEGORY",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "DATAABSENTREASON",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "VALUECODEABLECONCEPT",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "EFFECTIVEDATETIME",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PERFORMER",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "DIAGNOSTICREPORTCONTAINED"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

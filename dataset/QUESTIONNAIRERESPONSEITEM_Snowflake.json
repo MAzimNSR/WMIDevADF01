@@ -1,0 +1,48 @@
+{
+	"name": "QUESTIONNAIRERESPONSEITEM_Snowflake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LINK_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "TEXT",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "QUESTIONNAIRERESPONSEITEM"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

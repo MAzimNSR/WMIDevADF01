@@ -1,0 +1,246 @@
+{
+	"name": "PROCEDURE_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ENCOUNTER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IMPLICIT_RULES",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMED_PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FOLLOW_UP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ASSERTER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMED_AGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "INSTANTIATES_URI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LANGUAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BODY_SITE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "INSTANTIATES_CANONICAL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FOCAL_DEVICE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMED_STRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RECORDER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USED_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USED_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OUTCOME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS_REASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMPLICATION_DETAIL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMED_RANGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMPLICATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BASED_ON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMED_DATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REASON_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LOCATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_OF",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REPORT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMMENT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NUMERIC_SCALE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ARGUMENT_SIGNATURE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PROCEDURE_OWNER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PROCEDURE_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_ALTERED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CHARACTER_MAXIMUM_LENGTH",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CHARACTER_OCTET_LENGTH",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NUMERIC_PRECISION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NUMERIC_PRECISION_RADIX",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PROCEDURE_CATALOG",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PROCEDURE_LANGUAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PROCEDURE_DEFINITION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PROCEDURE_SCHEMA",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PROCEDURE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

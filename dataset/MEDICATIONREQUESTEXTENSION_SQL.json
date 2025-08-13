@@ -1,0 +1,38 @@
+{
+	"name": "MEDICATIONREQUESTEXTENSION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "VALUESTRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FHIR_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "URL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONREQUESTEXTENSION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

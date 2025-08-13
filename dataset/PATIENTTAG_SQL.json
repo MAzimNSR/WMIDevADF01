@@ -1,0 +1,54 @@
+{
+	"name": "PATIENTTAG_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SYSTEM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USER_SELECTED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VERSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PATIENTTAG"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

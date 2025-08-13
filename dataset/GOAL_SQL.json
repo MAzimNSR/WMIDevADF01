@@ -1,0 +1,98 @@
+{
+	"name": "GOAL_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LIFECYCLE_STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OUTCOME_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRIORITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "START",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TARGET",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ACHIEVEMENT_STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DESCRIPTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS_REASON",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "GOAL"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

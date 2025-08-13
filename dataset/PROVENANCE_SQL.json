@@ -1,0 +1,110 @@
+{
+	"name": "PROVENANCE_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TARGET",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID_VERSIONED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IMPLICITRULES",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OCCURREDDATETIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AGENT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EXTENSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "POLICY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OCCURREDPERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONTAINED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ACTIVITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ENTITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LOCATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "META",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LANGUAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SIGNATURE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RESOURCETYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RECORDED",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PROVENANCE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

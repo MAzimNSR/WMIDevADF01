@@ -1,0 +1,19 @@
+{
+	"name": "WMIDevADF01",
+	"properties": {
+		"globalConfigurations": {
+			"mountedConfiguration": [
+				{
+					"workspaceId": "f9955a5e-f4db-49d5-b61b-c97efd4656a0",
+					"artifactId": "91c24d02-f707-4487-942a-2a0e91aedbcc"
+				}
+			]
+		}
+	},
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "499a745c-b825-435e-b23e-3d991ebe5272",
+		"tenantId": "fbd10daf-af91-4f67-a4b1-6a4b5f3649b4"
+	}
+}

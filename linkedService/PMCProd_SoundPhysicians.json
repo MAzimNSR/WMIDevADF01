@@ -1,0 +1,16 @@
+{
+	"name": "PMCProd_SoundPhysicians",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=prdsql2k12.premierphc360.com;initial catalog=SoundPhysicians_MSSP;user id=ETLTEAM",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1OTBmNmI0NC03MDZlLTQxZmQtOGU1OC1kYTc2OTBkMjg2ZTUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "JH01IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

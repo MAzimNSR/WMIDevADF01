@@ -1,0 +1,82 @@
+{
+	"name": "ENCOUNTERCONTAINED_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TELECOM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RECORDEDDATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "QUALIFICATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FHIR_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RESOURCETYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLINICALSTATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ENCOUNTERCONTAINED"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

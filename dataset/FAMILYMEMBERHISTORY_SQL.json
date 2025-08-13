@@ -1,0 +1,102 @@
+{
+	"name": "FAMILYMEMBERHISTORY_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RELATIONSHIP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONDITION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BORN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ESTIMATED_AGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REASON_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_ABSENT_REASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DECEASED_BOOLEAN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SEX",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FAMILYMEMBERHISTORY"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

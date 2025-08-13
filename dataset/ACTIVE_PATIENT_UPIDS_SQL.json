@@ -1,0 +1,17 @@
+{
+	"name": "ACTIVE_PATIENT_UPIDS_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ACTIVE_PATIENT_UPIDS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

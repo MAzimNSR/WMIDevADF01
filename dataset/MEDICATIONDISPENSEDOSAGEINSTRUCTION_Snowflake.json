@@ -1,0 +1,102 @@
+{
+	"name": "MEDICATIONDISPENSEDOSAGEINSTRUCTION_Snowflake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ADDITIONAL_INSTRUCTION",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "DOSE_AND_RATE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "PATIENT_INSTRUCTION",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ROUTE",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ROUTE_TEXT",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SEQUENCE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "TEXT",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "START_DATE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "FREQUENCY",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "PERIOD",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 9
+			},
+			{
+				"name": "PERIOD_UNIT",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "MEDICATIONDISPENSEDOSAGEINSTRUCTION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

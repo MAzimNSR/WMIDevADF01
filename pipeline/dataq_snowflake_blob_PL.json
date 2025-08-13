@@ -1,0 +1,501 @@
+{
+	"name": "dataq_snowflake_blob_PL",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy from Snowflake to Blob",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "DATEKEY",
+									"type": "Int64"
+								},
+								"sink": {
+									"name": "DateKey",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "CALENDARDATE",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "CalendarDate",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "FULLDATEUK",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FullDateUK",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FULLDATEUSA",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FullDateUSA",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYOFMONTH",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayOfMonth",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYSUFFIX",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DaySuffix",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYNAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYOFWEEKUSA",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayOfWeekUSA",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYOFWEEKUK",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayOfWeekUK",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYOFWEEKINMONTH",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayOfWeekInMonth",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYOFWEEKINYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayOfWeekInYear",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYOFQUARTER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayOfQuarter",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DAYOFYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DayOfYear",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "WEEKOFMONTH",
+									"type": "String"
+								},
+								"sink": {
+									"name": "WeekOfMonth",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "WEEKOFQUARTER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "WeekOfQuarter",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "WEEKOFYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "WeekOfYear",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MONTH",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Month",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MONTHNAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MonthName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MONTHOFQUARTER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MonthOfQuarter",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "QUARTER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Quarter",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "QUARTERNAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "QuarterName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "YEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Year",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "YEARNAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "YearName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MONTHYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MonthYear",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MMYYYY",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MMYYYY",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FIRSTDAYOFMONTH",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "FirstDayOfMonth",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "LASTDAYOFMONTH",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "LastDayOfMonth",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "FIRSTDAYOFQUARTER",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "FirstDayOfQuarter",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "LASTDAYOFQUARTER",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "LastDayOfQuarter",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "FIRSTDAYOFYEAR",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "FirstDayOfYear",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "LASTDAYOFYEAR",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "LastDayOfYear",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ISHOLIDAYUSA",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "IsHolidayUSA",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "ISWEEKDAY",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "IsWeekday",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "HOLIDAYUSA",
+									"type": "String"
+								},
+								"sink": {
+									"name": "HolidayUSA",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ISHOLIDAYUK",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "IsHolidayUK",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "HOLIDAYUK",
+									"type": "String"
+								},
+								"sink": {
+									"name": "HolidayUK",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALDAYOFYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalDayOfYear",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALWEEKOFYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalWeekOfYear",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALMONTH",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalMonth",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALQUARTER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalQuarter",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALQUARTERNAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalQuarterName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalYear",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALYEARNAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalYearName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FISCALMONTHYEAR",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FiscalMonthYear",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "wiseman_aco",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DBAVM_SQLTable_LS",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-11-20T14:58:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

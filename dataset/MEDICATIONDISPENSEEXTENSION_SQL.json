@@ -1,0 +1,50 @@
+{
+	"name": "MEDICATIONDISPENSEEXTENSION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "VALUESTRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "URL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FHIR_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEPOSITIVEINT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEINSTANT",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONDISPENSEEXTENSION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

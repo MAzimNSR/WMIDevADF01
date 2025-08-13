@@ -1,0 +1,21 @@
+{
+	"name": "SqlServerTest",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "pre-release-sql01.wmi360.com",
+			"database": "CCDA_INTERFACE",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "ETLTEAM",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4ZmZiZDAyNS03OTMyLTQ4MGUtYWI5NC04MDU1MDJhZTk4NzkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "JH01IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

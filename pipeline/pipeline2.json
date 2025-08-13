@@ -1,0 +1,59 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute SSIS Package1",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [
+					{
+						"activity": "Waitfor5Sec",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 5,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "TestingLiftandShiftSSISAzurIR/TestingLiftandShiftSSISAzurIR/MainFlow.dtsx",
+						"type": "SSISDB"
+					},
+					"environmentPath": null,
+					"connectVia": {
+						"referenceName": "AzureIRSSIS",
+						"type": "IntegrationRuntimeReference"
+					},
+					"executionCredential": {
+						"domain": "MY360",
+						"userName": "muhammad.azim",
+						"password": {
+							"type": "SecureString",
+							"value": "**********"
+						}
+					},
+					"loggingLevel": "Basic"
+				}
+			},
+			{
+				"name": "Waitfor5Sec",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 5
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-11-25T10:33:11Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

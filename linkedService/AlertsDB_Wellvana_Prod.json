@@ -1,0 +1,16 @@
+{
+	"name": "AlertsDB_Wellvana_Prod",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=GLOBALWVPRODDB.wmi360.com;initial catalog=AlertsDB;user id=ETLTEAM",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5Y2YwY2Y5Yy0zMGI4LTRmOTAtYTc5ZC0xNzMzMWM2ZDI5N2MiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "JH01IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,118 @@
+{
+	"name": "MEDICATIONDISPENSE_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "MEDICATION_REFERENCE_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "QUANTITY_UNIT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "QUANTITY_VALUE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WHEN_PREPARED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WAS_SUBSTITUTED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "QUANTITY_SYSTEM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDICATION_CODEABLE_CONCEPT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WHEN_HANDED_OVER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LOCATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "QUANTITY_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBSTITUTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDICATION_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DAYS_SUPPLY",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONDISPENSE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,38 @@
+{
+	"name": "MEDICATIONDISPENSEAUTHORIZINGPRESCRIPTION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDICATION_REQUEST_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDICATION_DISPENSE_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONDISPENSEAUTHORIZINGPRESCRIPTION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

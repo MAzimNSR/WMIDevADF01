@@ -1,0 +1,38 @@
+{
+	"name": "PATIENTGENERALPRACTITIONER_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "GENERAL_PRACTITIONER_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GENERAL_PRACTITIONER_DISPLAY",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PATIENTGENERALPRACTITIONER"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

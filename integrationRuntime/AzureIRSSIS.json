@@ -1,0 +1,39 @@
+{
+	"name": "AzureIRSSIS",
+	"properties": {
+		"type": "Managed",
+		"description": "On premise SSIS package on ADF",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "South Central US",
+				"nodeSize": "Standard_D2_v3",
+				"numberOfNodes": 1,
+				"maxParallelExecutionsPerNode": 4
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "devazsqlsrv.database.windows.net",
+					"catalogAdminUserName": "devazdbadmin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "BasePrice",
+				"dataProxyProperties": {
+					"connectVia": {
+						"type": "IntegrationRuntimeReference",
+						"referenceName": "JH01IR"
+					},
+					"stagingLinkedService": {
+						"type": "LinkedServiceReference",
+						"referenceName": "AzureBlobStorageforSSIS"
+					},
+					"path": "blob4ssis"
+				}
+			}
+		}
+	}
+}

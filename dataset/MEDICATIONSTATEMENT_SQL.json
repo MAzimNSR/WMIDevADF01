@@ -1,0 +1,134 @@
+{
+	"name": "MEDICATIONSTATEMENT_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDICATION_CODEABLE_CONCEPT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REASON_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REASON_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DOSAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "INFORMATION_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DERIVED_FROM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BASED_ON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATE_ASSERTED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_OF",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONTEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LANGUAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IMPLICIT_RULES",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDICATION_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS_REASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_DATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONSTATEMENT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

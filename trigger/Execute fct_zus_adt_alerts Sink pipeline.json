@@ -1,0 +1,17 @@
+{
+	"name": "Execute fct_zus_adt_alerts Sink pipeline",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2023-10-25T07:01:00",
+				"timeZone": "Central Standard Time"
+			}
+		}
+	}
+}

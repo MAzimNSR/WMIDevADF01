@@ -1,0 +1,102 @@
+{
+	"name": "PROCEDURE_Snowflake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "TIMESTAMP_NTZ",
+				"precision": 29,
+				"scale": 9
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ACTIVE",
+				"type": "BOOLEAN",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "NAME",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "TELECOM",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "ADDRESS",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "GENDER",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BIRTH_DATE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "QUALIFICATION",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "COMMUNICATION",
+				"type": "VARIANT",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "TIMESTAMP_NTZ",
+				"precision": 29,
+				"scale": 9
+			}
+		],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "PROCEDURE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,26 @@
+{
+	"name": "ACTIVE_PATIENT_UPIDS_BLOB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "WMIblob_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ACTIVE_PATIENT_UPIDS_BLOB.csv",
+				"folderPath": "test",
+				"container": "dataq-snowflake-blob"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\r",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

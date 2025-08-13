@@ -1,0 +1,17 @@
+{
+	"name": "DBAVM_SQLTable_LS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DBAVMSQL_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DimDate"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,150 @@
+{
+	"name": "DEVICE_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SERIAL_NUMBER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VERSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DEVICE_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SAFETY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_NUMBER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MANUFACTURE_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EXPIRATION_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MANUFACTURER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONTACT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UDI_CARRIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "URL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DISTINCT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LOCATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OWNER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PARENT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OWNER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PROPERTY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LOT_NUMBER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS_REASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SPECIALIZATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DEFINITION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MODEL_NUMBER",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DEVICE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

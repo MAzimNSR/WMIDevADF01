@@ -1,0 +1,56 @@
+{
+	"name": "SQLTableToSnowflake_PL",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy SQL table to snowflake",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "SnowflakeSink",
+						"importSettings": {
+							"type": "SnowflakeImportCopyCommand"
+						}
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DBAVM_SQLTable_LS",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "wiseman_aco",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-11-20T14:58:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,55 @@
+{
+	"name": "BI SSIS Azure Testing",
+	"properties": {
+		"activities": [
+			{
+				"name": "BI SSIS Package",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 5,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "BI/Integration Services Project1/Package.dtsx",
+						"type": "SSISDB"
+					},
+					"environmentPath": null,
+					"connectVia": {
+						"referenceName": "AzureIRSSIS",
+						"type": "IntegrationRuntimeReference"
+					},
+					"executionCredential": {
+						"domain": "MY360",
+						"userName": "muhammad.azim",
+						"password": {
+							"type": "SecureString",
+							"value": "**********"
+						}
+					},
+					"loggingLevel": "Basic",
+					"projectConnectionManagers": {
+						"Source": {
+							"ConnectByProxy": {
+								"value": "True"
+							}
+						},
+						"devazsqlsrv.database.windows.net.premier_edw.shahzaib.hassan": {
+							"ConnectByProxy": {
+								"value": "True"
+							}
+						}
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-11-20T14:58:09Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

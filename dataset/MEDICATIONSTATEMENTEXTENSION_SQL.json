@@ -1,0 +1,58 @@
+{
+	"name": "MEDICATIONSTATEMENTEXTENSION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUESTRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEUNSIGNEDINT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEQUANTITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FHIR_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEDATETIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EXTENSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEREFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "URL",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONSTATEMENTEXTENSION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

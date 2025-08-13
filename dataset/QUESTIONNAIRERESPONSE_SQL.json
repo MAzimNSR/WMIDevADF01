@@ -1,0 +1,70 @@
+{
+	"name": "QUESTIONNAIRERESPONSE_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "RESPONSE_STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FORM_VERSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FORM_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AUTHORED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "QUESTIONNAIRE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "QUESTIONNAIRERESPONSE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

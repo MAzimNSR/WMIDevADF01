@@ -1,0 +1,24 @@
+{
+	"name": "Snowflake_ZUS_WELLVANA_EXPORT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "ACTIVE_PATIENT_UPIDS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

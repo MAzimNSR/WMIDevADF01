@@ -1,0 +1,162 @@
+{
+	"name": "Condition_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ONSET_RANGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EVIDENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ONSET_DATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RECORDER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ONSET_AGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ABATEMENT_PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ONSET_PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ABATEMENT_AGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ABATEMENT_STRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ASSERTER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BODY_SITE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LANGUAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ABATEMENT_DATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IMPLICIT_RULES",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLINICAL_STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ONSET_STRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ENCOUNTER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RECORDED_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ENCOUNTER_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VERIFICATION_STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SEVERITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ABATEMENT_RANGE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CONDITION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

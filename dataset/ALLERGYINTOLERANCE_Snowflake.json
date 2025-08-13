@@ -1,0 +1,17 @@
+{
+	"name": "ALLERGYINTOLERANCE_Snowflake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake_ZUS_WELLVANA_EXPORT_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "WELLVANA",
+			"table": "ALLERGYINTOLERANCE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

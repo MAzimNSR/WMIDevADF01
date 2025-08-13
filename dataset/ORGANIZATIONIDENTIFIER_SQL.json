@@ -1,0 +1,42 @@
+{
+	"name": "ORGANIZATIONIDENTIFIER_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "VALUE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SYSTEM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ASSIGNER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ORGANIZATIONIDENTIFIER"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

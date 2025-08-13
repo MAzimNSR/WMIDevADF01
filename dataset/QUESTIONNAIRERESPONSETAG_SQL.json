@@ -1,0 +1,54 @@
+{
+	"name": "QUESTIONNAIRERESPONSETAG_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FHIR_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USER_SELECTED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VERSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SYSTEM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "QUESTIONNAIRERESPONSETAG"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,26 @@
+{
+	"name": "ALLERGYINTOLERANCE_blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "WMIblob_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ALLERGYINTOLERANCE.csv",
+				"folderPath": "test",
+				"container": "dataq-snowflake-blob"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\r",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

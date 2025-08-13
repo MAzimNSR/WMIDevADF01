@@ -1,0 +1,50 @@
+{
+	"name": "PRACTITIONERADDRESS_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "USE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_LINE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_COUNTRY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_POSTAL_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_CITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_STATE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PRACTITIONERADDRESS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

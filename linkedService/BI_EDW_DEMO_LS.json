@@ -1,0 +1,16 @@
+{
+	"name": "BI_EDW_DEMO_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=PROD-DB01;initial catalog=BI_EDW_DEMO;user id=muhammad.azim",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhZGFkZmNhYy03OTM0LTQ3ZGEtYmMxNi1mNDNlYTNmOWVhYWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "DBAmachineIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

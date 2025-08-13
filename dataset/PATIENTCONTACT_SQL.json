@@ -1,0 +1,82 @@
+{
+	"name": "PATIENTCONTACT_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PHONE_WORK",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RELATIONSHIP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_COUNTRY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PHONE_OTHER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FAMILY_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PHONE_HOME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_LINE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_STATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GIVEN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_USE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_CITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EMAIL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_POSTAL_CODE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PATIENTCONTACT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

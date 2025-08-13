@@ -1,0 +1,26 @@
+{
+	"name": "AlertsDB_PMC_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AlertsDB_PMCProd_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "UserName",
+				"type": "varchar"
+			},
+			{
+				"name": "password",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Alerts_DBName"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

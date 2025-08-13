@@ -1,0 +1,106 @@
+{
+	"name": "PATIENT_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PATIENT_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MANAGING_ORGANIZATION_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DECEASED_BOOLEAN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ACTIVE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GENDER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MULTIPLE_BIRTH_INTEGER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GENERAL_PRACTITIONER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TELECOM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LINK",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MULTIPLE_BIRTH_BOOLEAN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMMUNICATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MANAGING_ORGANIZATION_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DECEASED_DATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BIRTHDATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONTACT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NAME",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PATIENT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

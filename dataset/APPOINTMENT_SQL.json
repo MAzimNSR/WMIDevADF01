@@ -1,0 +1,126 @@
+{
+	"name": "APPOINTMENT_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "DESCRIPTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMMENT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REQUESTED_PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PARTICIPANT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "START",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BASED_ON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "END",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REASON_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REASON_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MINUTES_DURATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SERVICE_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SPECIALTY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CANCELATION_REASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SERVICE_CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRIORITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "APPOINTMENT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_INSTRUCTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "APPOINTMENT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,114 @@
+{
+	"name": "DIAGNOSTICREPORTCONTAINED_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "TELECOM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REFERENCERANGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUERANGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEDATETIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FHIR_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUESTRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "INTERPRETATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RESOURCETYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUECODEABLECONCEPT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUEQUANTITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVEDATETIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATAABSENTREASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DIAGNOSTICREPORTCONTAINED"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

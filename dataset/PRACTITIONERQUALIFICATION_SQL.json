@@ -1,0 +1,62 @@
+{
+	"name": "PRACTITIONERQUALIFICATION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "IDENTIFIER_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE_SYSTEM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ISSUER_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ISSUER_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER_SYSTEM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE_TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PRACTITIONERQUALIFICATION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

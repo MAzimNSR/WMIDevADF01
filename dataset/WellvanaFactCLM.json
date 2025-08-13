@@ -1,0 +1,1135 @@
+{
+	"name": "WellvanaFactCLM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "FACT_CLM_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ACO_KEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BENE_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BENE_DOB",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "BENE_DEATH_DT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PRVDR_GRP_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRVDR_GRP_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRVDR_NPI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRVDR_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_FRM_BENE_PRVDR",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PARTNER_PROGM_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RGN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_GRP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_GRP_DTL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FAC_SPCLTY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MONTH",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ED_VISIT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRVDR_OSCAR_NUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BENE_HIC_NUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_FROM_DT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLM_THRU_DT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CUR_CLM_UNIQ_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_TYPE_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_BILL_FAC_TYPE_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_BILL_FAC_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_PRVDR_SPCLTY_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_PRVDR_SPCLTY_GRP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_PRVDR_SPCLTY_GRP_DTL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_PRVDR_SPCLTY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_BILL_CLSFCTN_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_BILL_CLSFCTN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRNCPL_DGNS_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRNCPL_DGNS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADMTG_DGNS_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADMTG_DGNS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_ALOWD_CHRG_AMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "BENE_PTNT_STUS_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "BENE_PTNT_STUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DGNS_DRG_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DGNS_DRG",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_PHRMCY_SRVC_TYPE_CD",
+				"type": "char"
+			},
+			{
+				"name": "CLM_PMT_AMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "CLM_OP_SRVC_TYPE_CD",
+				"type": "char"
+			},
+			{
+				"name": "CLM_OUTPAT_SRVC_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRVDR_NPI_NUM",
+				"type": "varchar"
+			},
+			{
+				"name": "OPRTG_PRVDR_NPI_NUM",
+				"type": "nchar"
+			},
+			{
+				"name": "ATNDG_PRVDR_NPI_NUM",
+				"type": "nchar"
+			},
+			{
+				"name": "OTHR_PRVDR_NPI_NUM",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_ADJSMT_TYPE_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_ADJSMT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_EFCTV_DT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLM_IDR_LD_DT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLM_ADMSN_TYPE_CD",
+				"type": "char"
+			},
+			{
+				"name": "CLM_ADMSN_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_ADMSN_SRC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_BILL_FREQ_CD",
+				"type": "char"
+			},
+			{
+				"name": "CLM_BILL_FREQ",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_QUERY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DGNS_PRCDR_ICD_IND",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLM_PARTA_DTL_HCPCS_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PARTA_DGNS_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PARTA_PRCDR_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_RNDRG_PRVDR_TAX_NUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_POS_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_POS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RNDRG_PRVDR_TYPE_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_LINE_HCPCS_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_CPT_GRP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_CPT_SGRP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_NUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLM_FED_TYPE_SRVC_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_FED_TYPE_SRVC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_PRMRY_PYR_CD",
+				"type": "char"
+			},
+			{
+				"name": "CLM_PRMRY_PYR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PAYTO_PRVDR_NPI_NUM",
+				"type": "nchar"
+			},
+			{
+				"name": "ORDRG_PRVDR_NPI_NUM",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_CARR_PMT_DNL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_PRCSG_IND",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_CNTL_NUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DISP_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_LINE_NDC_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_NDC_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRVDR_SRVC_ID_QLFYR_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "PRVDR_SRVC_ID_QLFYR_DESC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_1_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_2_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_3_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_4_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_5_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_6_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_7_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_8_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_9_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_10_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_11_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_12_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DSPNSNG_STUS_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_DSPNSNG_STUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DAW_PROD_SLCTN_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "CLM_LINE_SRVC_UNIT_QTY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_DAYS_SUPLY_QTY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRVDR_PRSBNG_ID_QLFYR_CD",
+				"type": "nchar"
+			},
+			{
+				"name": "PRVDR_PRSBNG_ID_QLFYR_DESC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRSBNG_PRVDR_NUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLM_LINE_RX_SRVC_RFRNC_NUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_RX_FILL_NUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLM_PRSBNG_PRVDR_GNRC_ID_NUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_SRVC_PRVDR_GNRC_ID_NUM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_LINE_CVRD_PD_AMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "CLM_LINE_BENE_PMT_AMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PD_AMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PD_AMT_RX_ONLY",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PD_AMT_MEDICAL_RX",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "LOS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AWV",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AWV_STUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DEATH_30DAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_1_DAY_STAY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_2_5_DAYS_STAY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OFFICE_VISIT_IN_14_DAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BENE_OFFICE_VISIT_IN_14_DAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_VISIT_AQRD_CND",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SNF_LOS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SNF_8_DAY_DSHRG",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SNF_15_DAY_DSHRG",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SNF_21_DAY_DSHRG",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SNF_RADMN_30_DAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SNF_INPTNT_TRANSFER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLM_DGNS",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "CLM_DGNS_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_DGNS_CD_DSC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RADMNS_PAC_DSHRG",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DSHRG_POST_ACUTE_CARE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_ADMNS_HH",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_RADMNS_HH",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ED_ADMNS_HH",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_DIRECT_ADMNS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AVDBLE_ED_VISIT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISTG_ED_RELEASED_ED",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISTG_ED_DSHRG_IP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_30_DAYS_RADMNS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_60_DAYS_RADMNS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_90_DAYS_RADMNS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOSP_OUTPAT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SNF",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HHA",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LTAC",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REHAB",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OTHER_FAC",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AVDBLE_ED_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "HOSP_DRT_ADMNS_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "VISTG_ED_RELEASED_ED_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "VISTG_ED_DSHRG_IP_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "HOSP_OUTPAT_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "SNF_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "HHA_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "LTAC_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "REHAB_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "OTHER_FAC_EXPENSE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "CMS_PRCDR_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CMS_PRCDR_CD_DESC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DRG_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DRG_CD_TITLE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADMNS_SRC_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADMNS_SRC_VAL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ATNDG_PRVDR_NPI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ATNDG_PRVDR_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CURRENT_ATTRIBUTE_PRVDR_GRP_TIN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CURRENT_ATTRIBUTE_PRVDR_GRP_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CURRENT_ATTRIBUTE_PRVDR_NPI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CURRENT_ATTRIBUTE_PRVDR_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AVDBLE_VISIT_FLAG",
+				"type": "bit"
+			},
+			{
+				"name": "COUNT_30_DAYS_RADMNS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_ED_VISIT_DURING_EPISODE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_ED_VISITS_15_DAYS_EPISODE_COMPLETION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_ED_VISITS_30_DAYS_EPISODE_COMPLETION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_ED_VISITS_7_DAYS_EPISODE_COMPLETION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_INPTNT_HOSP_DURING_EPISODE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_INPTNT_HOSP_15_DAYS_EPISODE_COMPLETION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_INPTNT_HOSP_30_DAYS_EPISODE_COMPLETION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_INPTNT_HOSP_7_DAYS_EPISODE_COMPLETION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_OUTPUT_HOSP_DURING_EPISODE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT_OUTPUT_HOSP_30_DAYS_EPISODE_COMPLETION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DISPOSITION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DRG",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HH_RECERTIFICATION_FLAG",
+				"type": "bit"
+			},
+			{
+				"name": "ORDRG_PRVDR_NPI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ORDRG_PRVDR_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BENE_UNIQUE_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "RADMNS_ADMNS_SRC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RADMNS_AVDBLE_FLAG",
+				"type": "bit"
+			},
+			{
+				"name": "RADMNS_COST",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "RADMNS_DISPOSITION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RADMNS_DOS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RADMNS_DRG",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RADMNS_FAC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RADMNS_LOS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VISIT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DISPOSITION_VAL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NDC_DRUG_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DRUG_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PartBID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SpecialtyDescription",
+				"type": "varchar"
+			},
+			{
+				"name": "ProviderOrganizationName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HCPCS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_ADMSN_SRC_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "BENE_EQTBL_BIC_HICN_NUM",
+				"type": "varchar"
+			},
+			{
+				"name": "FAC_PRVDR_NPI_NUM",
+				"type": "varchar"
+			},
+			{
+				"name": "PracticeID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProviderType",
+				"type": "varchar"
+			},
+			{
+				"name": "TaxonomyDetail",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SHORTDESCRIPTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SpecialityCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SpecialityDetail",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CodeValue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsPseudoClaim",
+				"type": "varchar"
+			},
+			{
+				"name": "OSCARID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MailOrderIndicator",
+				"type": "bit"
+			},
+			{
+				"name": "GenericDrugIndicator",
+				"type": "varchar"
+			},
+			{
+				"name": "PRESCRIBER_FIRST_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRESCRIBER_LAST_NAME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_MDCR_NPMT_RSN_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CLM_NCH_PRMRY_PYR_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRVDR_FAC_FIPS_ST_CD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PatientName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PhysicianGroupID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PhysicianGroupName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PayerID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RNDRG_PRVDR_FIPS_ST_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "CLM_LINE_FROM_DT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLM_LINE_THRU_DT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLM_PRMRY_PYR_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "CLM_LINE_DGNS_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "RNDRG_PRVDR_NPI_NUM",
+				"type": "varchar"
+			},
+			{
+				"name": "CLM_CARR_PMT_DNL_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "CLM_PRCSG_IND_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "CLM_LINE_ALOWD_UNIT_QTY",
+				"type": "varchar"
+			},
+			{
+				"name": "HCPCS_1_MDFR_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "HCPCS_2_MDFR_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "HCPCS_3_MDFR_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "HCPCS_4_MDFR_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "HCPCS_5_MDFR_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "PhysicianID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLM_QUERY_CD",
+				"type": "varchar"
+			},
+			{
+				"name": "ISProcessedODS",
+				"type": "bit"
+			},
+			{
+				"name": "PharmacyName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsPostDischargePCPVisitwithIn30Days",
+				"type": "bit"
+			},
+			{
+				"name": "PcpVisitDateIn30Days",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TBL_FACT_CLMS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

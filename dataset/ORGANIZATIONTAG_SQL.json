@@ -1,0 +1,50 @@
+{
+	"name": "ORGANIZATIONTAG_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FHIR_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "USER_SELECTED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SYSTEM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VERSION",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ORGANIZATIONTAG"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

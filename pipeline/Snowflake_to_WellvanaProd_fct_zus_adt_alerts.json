@@ -1,0 +1,57 @@
+{
+	"name": "Snowflake_to_WellvanaProd_fct_zus_adt_alerts",
+	"properties": {
+		"activities": [
+			{
+				"name": "Sink fct_zus_adt_alerts from Snowflake to WellvanaProd",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"query": "select * from Prod.fct_zus_adt_alerts where last_updated >= DATEADD(day,-3, GETDATE()) and \t\nINSTANCE_FLAG = 1.0",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "fct_zus_adt_alerts_Source",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "fct_zus_adt_alerts_Sink",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-11-20T14:58:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

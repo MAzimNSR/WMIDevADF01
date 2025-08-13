@@ -1,0 +1,150 @@
+{
+	"name": "DIAGNOSTICREPORT_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONCLUSION_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDIA_LINK_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RESULT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDIA_LINK_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ENCOUNTER_REFERENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ISSUED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE_TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SPECIMEN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRESENTED_FORM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BASED_ON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CONCLUSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RESULTS_INTERPRETER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_DATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_PERIOD_START",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IMAGING_STUDY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_PERIOD_END",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_PERIOD_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE_CODING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEDIA_COMMENT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ENCOUNTER_DISPLAY",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DIAGNOSTICREPORT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

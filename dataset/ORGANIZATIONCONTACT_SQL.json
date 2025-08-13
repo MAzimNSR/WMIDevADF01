@@ -1,0 +1,50 @@
+{
+	"name": "ORGANIZATIONCONTACT_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_COUNTRY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_POSTAL_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_STATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PHONE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_CITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDRESS_LINE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ORGANIZATIONCONTACT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

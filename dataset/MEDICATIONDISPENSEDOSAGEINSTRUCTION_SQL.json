@@ -1,0 +1,74 @@
+{
+	"name": "MEDICATIONDISPENSEDOSAGEINSTRUCTION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "SEQUENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ROUTE_TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_INSTRUCTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FREQUENCY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDITIONAL_INSTRUCTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DOSE_AND_RATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "START_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ROUTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERIOD_UNIT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONDISPENSEDOSAGEINSTRUCTION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

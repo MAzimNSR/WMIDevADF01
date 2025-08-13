@@ -1,0 +1,1913 @@
+{
+	"name": "__Snowflake_to_Wellvana_DR_2",
+	"properties": {
+		"activities": [
+			{
+				"name": "MEDICATIONDISPENSEEXTENSION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONDISPENSEEXTENSION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONDISPENSEEXTENSION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONREQUEST_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONREQUEST_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONREQUEST_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONDISPENSETAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONDISPENSETAG_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONDISPENSETAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONREQUESTCONTAINED_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTCONTAINED_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTCONTAINED_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONREQUESTDOSAGEINSTRUCTION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"query": "SELECT METHOD\n      ,TEXT\n      ,START_DATE\n      ,DOSE_AND_RATE\n      ,END_DATE\n      ,METHOD_TEXT\n      ,ADDITIONAL_INSTRUCTION\n      ,COALESCE(SEQUENCE, 0) as SEQUENCE\n      ,COALESCE(AS_NEEDED, 0) AS AS_NEEDED\n      ,ID\n      ,PATIENT_INSTRUCTION\n      ,UNIVERSAL_PATIENT_IDENTIFIER\n      ,ROUTE\n      ,BUILDER_ID\n  FROM wellvana.MEDICATIONREQUESTDOSAGEINSTRUCTION",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "METHOD",
+									"type": "String"
+								},
+								"sink": {
+									"name": "METHOD",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "TEXT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "TEXT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "START_DATE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "START_DATE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DOSE_AND_RATE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DOSE_AND_RATE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "END_DATE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "END_DATE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "METHOD_TEXT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "METHOD_TEXT",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ADDITIONAL_INSTRUCTION",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ADDITIONAL_INSTRUCTION",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "SEQUENCE",
+									"type": "Int64"
+								},
+								"sink": {
+									"name": "SEQUENCE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AS_NEEDED",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "AS_NEEDED",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "ID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PATIENT_INSTRUCTION",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PATIENT_INSTRUCTION",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+									"type": "String"
+								},
+								"sink": {
+									"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ROUTE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ROUTE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "BUILDER_ID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "BUILDER_ID",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTDOSAGEINSTRUCTION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTDOSAGEINSTRUCTION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONREQUESTEXTENSION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTEXTENSION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTEXTENSION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONREQUESTTAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTTAG_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONREQUESTTAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONSTATEMENT_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONSTATEMENT_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONSTATEMENT_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONSTATEMENTEXTENSION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONSTATEMENTEXTENSION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONSTATEMENTEXTENSION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "MEDICATIONSTATEMENTTAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MEDICATIONSTATEMENTTAG_snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MEDICATIONSTATEMENTTAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "OBSERVATION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "OBSERVATION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "OBSERVATION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "OBSERVATIONPERFORMER_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "OBSERVATIONPERFORMER_SnowFlake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "OBSERVATIONPERFORMER_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "OBSERVATIONTAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "OBSERVATIONTAG_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "OBSERVATIONTAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "ORGANIZATION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ORGANIZATION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ORGANIZATION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "ORGANIZATIONADDRESS_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ORGANIZATIONADDRESS_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ORGANIZATIONADDRESS_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "ORGANIZATIONCONTACT_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ORGANIZATIONCONTACT_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ORGANIZATIONCONTACT_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "ORGANIZATIONIDENTIFIER_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ORGANIZATIONIDENTIFIER_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ORGANIZATIONIDENTIFIER_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "ORGANIZATIONTAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ORGANIZATIONTAG_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ORGANIZATIONTAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "ORGANIZATIONTELECOM_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ORGANIZATIONTELECOM_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ORGANIZATIONTELECOM_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PATIENT_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PATIENT_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PATIENT_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PATIENTADDRESS_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PATIENTADDRESS_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PATIENTADDRESS_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PATIENTCOMMUNICATION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PATIENTCOMMUNICATION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PATIENTCOMMUNICATION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PATIENTCONTACT_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PATIENTCONTACT_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PATIENTCONTACT_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PATIENTGENERALPRACTITIONER_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PATIENTGENERALPRACTITIONER_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PATIENTGENERALPRACTITIONER_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PATIENTTAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PATIENTTAG_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PATIENTTAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PRACTITIONER_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PRACTITIONER_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PRACTITIONER_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PRACTITIONERADDRESS_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PRACTITIONERADDRESS_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PRACTITIONERADDRESS_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PRACTITIONERQUALIFICATION_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PRACTITIONERQUALIFICATION_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PRACTITIONERQUALIFICATION_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PRACTITIONERTAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PRACTITIONERTAG_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PRACTITIONERTAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PRACTITIONERTELECOM_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PRACTITIONERTELECOM_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PRACTITIONERTELECOM_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PROCEDURE_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "PROCEDURE_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PROCEDURE_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PROCEDURETAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PROCEDURETAG_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PROCEDURETAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "PROVENANCE_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "PROVENANCE_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "PROVENANCE_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "QUESTIONNAIRERESPONSE_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "QUESTIONNAIRERESPONSE_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "QUESTIONNAIRERESPONSE_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "QUESTIONNAIRERESPONSEITEM_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "QUESTIONNAIRERESPONSEITEM_Snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "QUESTIONNAIRERESPONSEITEM_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "QUESTIONNAIRERESPONSETAG_Snowflake_to_SQL",
+				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "WMIblob_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "dataq-snowflake-blob"
+					},
+					"enableSkipIncompatibleRow": false
+				},
+				"inputs": [
+					{
+						"referenceName": "QUESTIONNAIRERESPONSETAG_snowflake",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "QUESTIONNAIRERESPONSETAG_SQL",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-11-20T14:58:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

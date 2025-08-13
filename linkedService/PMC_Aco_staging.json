@@ -1,0 +1,16 @@
+{
+	"name": "PMC_Aco_staging",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=prdsql2k12.premierphc360.com;initial catalog=Aco_Staging;user id=ETLTEAM",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhODZjNTM5OC04YzE0LTRkMWUtODJiYy01Y2Y4N2E2MWNhMjkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "JH01IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

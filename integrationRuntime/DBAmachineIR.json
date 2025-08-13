@@ -1,0 +1,7 @@
+{
+	"name": "DBAmachineIR",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "IR created in wiseman subnet on DBA macine"
+	}
+}

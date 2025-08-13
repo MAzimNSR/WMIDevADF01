@@ -1,0 +1,206 @@
+{
+	"name": "OBSERVATION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ENCOUNTER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_RANGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NOTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_ABSENT_REASON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_CODEABLE_CONCEPT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_INSTANT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SPECIMEN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_QUANTITY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_DATETIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_STRING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LANGUAGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PERFORMER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_TYPE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_PERIOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CATEGORY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FOCUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DERIVED_FROM",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBJECT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_RATIO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IMPLICIT_RULES",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HAS_MEMBER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ISSUED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMPONENT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BODY_SITE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREATED_AT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "METHOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_TIMING",
+				"type": "nvarchar"
+			},
+			{
+				"name": "INTERPRETATION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_SAMPLE_DATA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_INTEGER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "REFERENCE_RANGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DISPLAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EFFECTIVE_DATE_TIME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BASED_ON",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_OF",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VALUE_BOOLEAN",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "OBSERVATION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,886 @@
+{
+	"name": "fct_zus_adt_alerts_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AlertsDB_Wellvana_Prod",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "varchar"
+			},
+			{
+				"name": "VERSION",
+				"type": "varchar"
+			},
+			{
+				"name": "LAST_UPDATED",
+				"type": "varchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "varchar"
+			},
+			{
+				"name": "PERIOD_START",
+				"type": "varchar"
+			},
+			{
+				"name": "PERIOD_END",
+				"type": "varchar"
+			},
+			{
+				"name": "CLASS_DISPLAY",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCATION_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCATION_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCATION_ADDRESS_CITY",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCATION_ADDRESS_STATE",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCATION_ADDRESS_POSTAL_CODE",
+				"type": "varchar"
+			},
+			{
+				"name": "DATA_SOURCE",
+				"type": "varchar"
+			},
+			{
+				"name": "DISCHARGE_DISPOSITION",
+				"type": "varchar"
+			},
+			{
+				"name": "WELLVANA_PATIENT_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "NO_CODES",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD1",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD2",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD3",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD4",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD5",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD6",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD7",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD8",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD9",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD10",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD11",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD12",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD13",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD14",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD15",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD16",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD17",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD18",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD19",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD20",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD21",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD22",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD23",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD24",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD25",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD26",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD27",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD28",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD29",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD30",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD31",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD32",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD33",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD34",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD35",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD36",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD37",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD38",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD39",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD40",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD41",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD42",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD43",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD44",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD45",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD46",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD47",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD48",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD49",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD50",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD51",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD52",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD53",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD54",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD55",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD56",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD57",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD58",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD59",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD60",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD61",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD62",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD63",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD64",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD65",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD66",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD67",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD68",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD69",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD70",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD71",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD72",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD73",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD74",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD75",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD76",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD77",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD78",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD79",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD80",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD81",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD82",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD83",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD84",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD85",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD86",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD87",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD88",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD89",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD90",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD91",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD92",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD93",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD94",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD95",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD96",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD97",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD98",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD99",
+				"type": "varchar"
+			},
+			{
+				"name": "ICD100",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT1",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT2",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT3",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT4",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT5",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT6",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT7",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT8",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT9",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT10",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT11",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT12",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT13",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT14",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT15",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT16",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT17",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT18",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT19",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT20",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT21",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT22",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT23",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT24",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT25",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT26",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT27",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT28",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT29",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT30",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT31",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT32",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT33",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT34",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT35",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT36",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT37",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT38",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT39",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT40",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT41",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT42",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT43",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT44",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT45",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT46",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT47",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT48",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT49",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT50",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT51",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT52",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT53",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT54",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT55",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT56",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT57",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT58",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT59",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT60",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT61",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT62",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT63",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT64",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT65",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT66",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT67",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT68",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT69",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT70",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT71",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT72",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT73",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT74",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT75",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT76",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT77",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT78",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT79",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT80",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT81",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT82",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT83",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT84",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT85",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT86",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT87",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT88",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT89",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT90",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT91",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT92",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT93",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT94",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT95",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT96",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT97",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT98",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT99",
+				"type": "varchar"
+			},
+			{
+				"name": "ICDTXT100",
+				"type": "varchar"
+			},
+			{
+				"name": "ADT_UNIQUE_ID",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "fct_zus_adt_alerts"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

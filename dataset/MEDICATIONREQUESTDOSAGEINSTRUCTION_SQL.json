@@ -1,0 +1,74 @@
+{
+	"name": "MEDICATIONREQUESTDOSAGEINSTRUCTION_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Wellvana_DR_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "METHOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "START_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DOSE_AND_RATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "END_DATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "METHOD_TEXT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADDITIONAL_INSTRUCTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SEQUENCE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AS_NEEDED",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PATIENT_INSTRUCTION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UNIVERSAL_PATIENT_IDENTIFIER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ROUTE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUILDER_ID",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MEDICATIONREQUESTDOSAGEINSTRUCTION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
